@@ -7,3 +7,4 @@ class mainController extends CI_Controller {
 	{	
 		
 }
+}
