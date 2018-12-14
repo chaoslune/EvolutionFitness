@@ -5,7 +5,5 @@ class mainController extends CI_Controller {
 
 	public function index()
 	{	
-		$list['titulo'] = 'Início';
-		$this->load->view('main', $list);
-	}
+		
 }
