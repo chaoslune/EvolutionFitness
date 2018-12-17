@@ -11,11 +11,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
   <meta name="author" content="">
   <title> <?php echo $title; ?></title>
 
-	<link href="<?php echo base_url('assets/css/bootstrap.min');?>" rel="stylesheet">
-	<link href="<?php echo base_url('assets/css/signin');?>" rel="stylesheet">
-	<script src="<?php echo base_url('assets/js/jquery-3.3.1.slim.min');?>"></script>
-	<script src="<?php echo base_url('assets/js/popper.min');?>"></script>
-	<script src="<?php echo base_url('assets/js/bootstrap.min');?>"></script>
 </head>
 
 <body class="text-center">
