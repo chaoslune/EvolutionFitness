@@ -28,9 +28,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
       <a class="navbar-brand js-scroll-trigger" href="#page-top">
         <span class="d-block d-lg-none">Evolution Fitness</span>
-        <span class="d-none d-lg-block">
-          <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="https://scontent.fpoa17-1.fna.fbcdn.net/v/t1.0-9/15391201_675640959270945_499002719872594017_n.jpg?_nc_cat=101&_nc_ht=scontent.fpoa17-1.fna&oh=76a7de604e4a4d58d6ed447bbf9d29d1&oe=5CA902D7" alt="">
-        </span>
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -46,7 +43,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
     <div class="container-fluid p-0">
 
-      <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
+      <section class="resume-section p-3 p-lg-5" id="about">
         <div class="my-auto">
           <h1 class="mb-0">Evolution
             <span class="text-primary">Fitness</span>
@@ -112,5 +109,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
   <script src="<?php echo base_url('assets/js/resume.min.js');?>"></script>
 
   </body>
+
 
 </html>
