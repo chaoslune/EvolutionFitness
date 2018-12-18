@@ -14,7 +14,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
   <!-- CSS -->
   <link href="<?php echo base_url('assets/css/bootstrap.min.css');?>" rel="stylesheet">
-  <link href="<?php echo base_url('assets/css/signin.css');?>" rel="stylesheet">
+
   <link href="<?php echo base_url('assets/css/resume.min.css');?>" rel="stylesheet">
 
   <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
@@ -38,22 +38,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#about">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#education">Education</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#interests">Interests</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#awards">Awards</a>
+            <a class="nav-link js-scroll-trigger" href="#about">Alunos</a>
           </li>
         </ul>
       </div>
@@ -69,7 +54,46 @@ defined('BASEPATH') OR exit('No direct script access allowed');
           <div class="subheading mb-5">Rua Valêncio Manoel Floriano, 1000 - Vila São João, Torres, Rio Grande do Sul·
             <a>(51) 98122-3269</a>
           </div>
-          <p class="lead mb-5">I am experienced in leveraging agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.</p>
+          
+          <div class="my-auto">
+          <h2 class="mb-5">Alunos</h2>
+
+          <table class="table">
+            <thead>
+            <tr>
+              <th scope="col"></th>
+              <th scope="col">Nome</th>
+              <th scope="col">CPF</th>
+              <th scope="col">Data de Nascimento</th>
+              <th scope="col">Altura</th>
+              <th scope="col">Peso</th>
+              <th scope="col">Endereço</th>
+              <th scope="col">Mensalidade</th>
+              <th scope="col">Forma de Pagamento</th>
+              <th scope="col">OBS</th>
+            </tr>
+            </thead> 
+            <tbody>
+            <?php if(!empty($students)): foreach ($students as $s): ?>
+            
+            <tr>
+            <th scope="row"><?php echo $s->id; ?></th>
+            <td><?php echo $s->nome; ?></td>
+            <td><?php echo $s->cpf; ?></td>
+            <td><?php echo $s->dataNascimento; ?></td>
+            <td><?php echo $s->altura; ?></td>
+            <td><?php echo $s->peso; ?></td>
+            <td><?php echo $s->endereço; ?></td>
+            <td><?php echo $s->mensalidade; ?></td>
+            <td><?php echo $s->formaPagamento; ?></td>
+            <td><?php echo $s->obs; ?></td>
+             <a href="<?php echo base_url('delete/').$s->id; ?>"> DELETAR </a>
+            <?php endforeach; else: echo 'Sem cadastros'; endif; ?>
+            </tr>
+           
+            </tbody>
+          </table>
+          </div>
           <div class="social-icons">
             <a href="https://www.facebook.com/acad.evolutionfitness/">
               <i class="fab fa-facebook-f"></i>
@@ -79,12 +103,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
       </section>
 
       <hr class="m-0">
-      
+
     </div>
 
-  <script src="<?php echo base_url('assets/js/jquery-3.3.1.slim.min.js');?>"></script>
-  <script src="<?php echo base_url('assets/js/popper.min.js');?>"></script>
-  <script src="<?php echo base_url('assets/js/bootstrap.min.js');?>"></script>
+  <script src="<?php echo base_url('assets/js/jquery.min.js');?>"></script>
+  <script src="<?php echo base_url('assets/js/bootstrap.bundle.min.js');?>"></script>
   <script src="<?php echo base_url('assets/js/jquery.easing.min.js');?>"></script>
   <script src="<?php echo base_url('assets/js/resume.min.js');?>"></script>
 

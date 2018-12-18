@@ -3,14 +3,23 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class studentsController extends CI_Controller {
 
-	$this->load->model('studentsModel/studentsModel', 'sModel');
-
 	public function index(){
+		$this->load->model('studentsModel/studentsModel', 'sModel');
+
 		$list['students'] = $this->sModel->load();
 		$list['title'] = 'Início';
 		$this->load->view('main', $list);
 	}
 	
+	public function delete($id){
+		$this->load->model('studentsModel/studentsModel', 'sModel');
+
+		$this->sModel->delete($id);
+		$list['title'] = 'Evolution Fitness';
+		$list['students'] = $this->sModel->load();
+		$this->template->load('Template/base', 'main', $list);
+	}
+
 	public function studentForm(){
 		
 		$rules = array(
@@ -62,7 +71,7 @@ class studentsController extends CI_Controller {
 
 		);
 
-		$this->form_validation->set_message('cpf' => 'Apenas números');
+		$this->form_validation->set_message('cpf', 'Apenas números');
 		$this->form_validation->set_rules($rules);
 		
 		//ADICIONAR NA VIEW DE CADASTRO DE ESTUDANTES

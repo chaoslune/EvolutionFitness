@@ -1,17 +1,22 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class studentModel extends CI_Model {
+class studentsModel extends CI_Model {
 
         public function insert($data){
-          	$this->db->insert('alunos', $data);
+           	$this->db->insert('alunos', $data);
         }
 
         public function load(){
-            return $this->db->get('alunos');            
+        	$query = "SELECT * FROM alunos";
+        	if(!$this->db->query($query)->result()){
+        		
+        	}else{
+            return $this->db->query($query)->result();           
+        	}
         }
 
-        public function delete($id){
+        public function delete($id = null){
         	$this->db->delete('alunos', array('id' => $id));
         }
 }
