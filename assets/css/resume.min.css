@@ -28,7 +28,7 @@ h4,
 h5,
 h6 {
 	font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-	font-weight: 700;
+	font-weight: 200;
 	text-transform: uppercase;
 	color: #343a40
 }
@@ -128,7 +128,7 @@ p.lead {
 	#sideNav .navbar-collapse {
 		display: -webkit-box;
 		display: -ms-flexbox;
-		display: flex;
+			display: flex;
 		-webkit-box-align: start;
 		-ms-flex-align: start;
 		align-items: flex-start;
@@ -190,6 +190,16 @@ section.resume-section .resume-item .resume-date {
 
 a {
 	color: #bd5d38
+}
+
+.navheadere {
+	color: #bd5d38;
+	text-shadow: 2px 1px black;
+}
+
+.navheaderf {
+	color: white;
+	text-shadow: 2px 1px black;
 }
 
 a:active,

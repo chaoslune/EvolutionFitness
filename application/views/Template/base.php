@@ -29,6 +29,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
       <a class="navbar-brand js-scroll-trigger" href="#page-top">
         <span class="d-block d-lg-none">Evolution Fitness</span>
       </a>
+      <h2 class="navheadere">Evolution
+            <span class="navheaderf">Fitness</span>
+      </h2>
+
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -44,14 +48,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <div class="container-fluid p-0">
 
       <section class="resume-section p-3 p-lg-5" id="about">
-        <div class="my-auto">
-          <h1 class="mb-0">Evolution
-            <span class="text-primary">Fitness</span>
-          </h1>
-          <div class="subheading mb-5">Rua Valêncio Manoel Floriano, 1000 - Vila São João, Torres, Rio Grande do Sul·
-            <a>(51) 98122-3269</a>
-          </div>
-          
+        <div class="my-auto">       
           <div class="my-auto">
           <h2 class="mb-5">Alunos</h2>
 
@@ -96,8 +93,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
               <i class="fab fa-facebook-f"></i>
             </a>
           </div>
+
         </div>
       </section>
+      
+
 
       <hr class="m-0">
 
