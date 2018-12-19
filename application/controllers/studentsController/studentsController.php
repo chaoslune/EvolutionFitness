@@ -4,20 +4,29 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 class studentsController extends CI_Controller {
 
 	public function index(){
-		$this->load->model('studentsModel/studentsModel', 'sModel');
 
+		$this->template->load('Template/base', 'main');
+	}
+
+	public function listStudentsLoadView()
+	{
+		$this->load->model('studentsModel/studentsModel', 'sModel');
 		$list['students'] = $this->sModel->load();
 		$list['title'] = 'Início';
-		$this->load->view('main', $list);
+		$this->template->load('Template/base', 'listStudentsView', $list);
 	}
-	
+
+	public function addStudentsLoadView()
+	{
+		$this->template->load('Template/base', 'addStudentsView');
+	}
 	public function delete($id){
 		$this->load->model('studentsModel/studentsModel', 'sModel');
 
 		$this->sModel->delete($id);
 		$list['title'] = 'Evolution Fitness';
 		$list['students'] = $this->sModel->load();
-		$this->template->load('Template/base', 'main', $list);
+		$this->template->load('Template/base', 'listStudentsView', $list);
 	}
 
 	public function studentForm(){

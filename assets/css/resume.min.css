@@ -7,7 +7,13 @@
  * Copyright 2013-2018 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-resume/blob/master/LICENSE)
  */
+/* ~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~ */
 
+ /* CSS da BASE */
+ /* ~~~~~~~~~~~~ */
+ /* ~~~~~~~~~~~~ */
+ /* ~~~~~~~~~~~~ */
 body {
 	font-family: Muli, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 	padding-top: 54px;
@@ -123,7 +129,7 @@ p.lead {
 	#sideNav .navbar-brand .img-profile {
 		max-width: 10rem;
 		max-height: 10rem;
-		border: .5rem solid rgba(255, 255, 255, .2)
+		border: .2rem solid rgba(255, 255, 255, .2)
 	}
 	#sideNav .navbar-collapse {
 		display: -webkit-box;
@@ -202,8 +208,47 @@ a {
 	text-shadow: 2px 1px black;
 }
 
+.img-navheader{
+	max-width: auto;
+	height: auto;
+	border: 1px solid #ddd;
+ 	border-radius: 4px;
+  	padding: 5px;
+}
+
 a:active,
 a:focus,
 a:hover {
 	color: #824027
 }	
+
+
+
+
+/* CSS addStudents View */
+/* ~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~ */
+
+.card {
+    margin-top: 1em;
+}
+
+/* IMG displaying */
+.person-card {
+    margin-top: 5em;
+    padding-top: 5em;
+}
+.person-card .card-title{
+    text-align: center;
+}
+.person-card .person-img{
+    width: 10em;
+    position: absolute;
+    top: -5em;
+    left: 50%;
+    margin-left: -5em;
+    border-radius: 100%;
+    overflow: hidden;
+    background-color: white;
+}
