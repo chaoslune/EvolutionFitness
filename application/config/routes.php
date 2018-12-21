@@ -57,3 +57,4 @@ $route['translate_uri_dashes'] = FALSE;
 $route['delete/(:any)'] = 'studentsController/studentsController/delete/$1';
 $route['listStudents'] = 'studentsController/studentsController/listStudentsLoadView';
 $route['addStudents'] = 'studentsController/studentsController/addStudentsLoadView';
+$route['editStudents'] = 'studentsController/studentsController/editStudentsLoadView';

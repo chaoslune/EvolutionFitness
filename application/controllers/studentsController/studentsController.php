@@ -20,6 +20,12 @@ class studentsController extends CI_Controller {
 	{
 		$this->template->load('Template/base', 'addStudentsView');
 	}
+
+	public function editStudentsLoadView()
+	{
+		$this->template->load('Template/base', 'editStudentsView');
+	}
+
 	public function delete($id){
 		$this->load->model('studentsModel/studentsModel', 'sModel');
 

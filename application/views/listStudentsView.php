@@ -38,7 +38,8 @@
 	            <td><?php echo $s->mensalidade; ?></td>
 	            <td><?php echo $s->formaPagamento; ?></td> 
 	            <td>
-	            	<a href="<?php echo base_url('delete/').$s->id; ?>" class="btn btn-info" data-toggle="tooltip" data-placement="right" title="Editar Cadastro de Aluno"><i class="fas fa-user-edit"></i></a>
+	            	<a href="" class="btn btn-success" data-toggle="tooltip" data-placement="right" title="Pagamento Rápido"><i class="fas fa-money-check-alt"></i></a>
+	            	<a href="<?php echo base_url('editStudents'); ?>" class="btn btn-info" data-toggle="tooltip" data-placement="right" title="Editar Cadastro de Aluno"><i class="fas fa-user-edit"></i></a>
 	            	<a href="<?php echo base_url('delete/').$s->id; ?>" class="btn btn-danger" data-toggle="tooltip" data-placement="right" title="Deletar Cadastro de Aluno"><i class="fas fa-user-times"></i></a>	            		            
 	            <?php endforeach; else: ?> <h2>Sem cadastros</h2><?php ; endif; ?>
 	            </td>
