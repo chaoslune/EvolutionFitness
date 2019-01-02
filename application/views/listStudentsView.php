@@ -33,13 +33,13 @@
 	            <?php if(!empty($students)): foreach ($students as $s): ?>
 	            
 	            <tr>
-	            <td><?php echo $s->nome; ?></td>
+	            <td><?php echo $s->firstName; ?> <?php echo $s->lastName; ?></td>
 	            <td><?php echo $s->cpf; ?></td>
-	            <td><?php echo $s->mensalidade; ?></td>
-	            <td><?php echo $s->formaPagamento; ?></td> 
+	            <td><?php echo $s->plots; ?></td>
+	            <td><?php echo $s->plotsPayment; ?></td> 
 	            <td>
 	            	<a href="" class="btn btn-success" data-toggle="tooltip" data-placement="right" title="Pagamento Rápido"><i class="fas fa-money-check-alt"></i></a>
-	            	<a href="<?php echo base_url('editStudents'); ?>" class="btn btn-info" data-toggle="tooltip" data-placement="right" title="Editar Cadastro de Aluno"><i class="fas fa-user-edit"></i></a>
+	            	<a href="<?php echo base_url('editStudents/').$s->id; ?>" id="btnEdit" class="btn btn-info" data-toggle="tooltip" data-placement="right" title="Editar Cadastro de Aluno"><i class="fas fa-user-edit"></i></a>
 	            	<a href="<?php echo base_url('delete/').$s->id; ?>" class="btn btn-danger" data-toggle="tooltip" data-placement="right" title="Deletar Cadastro de Aluno"><i class="fas fa-user-times"></i></a>	            		            
 	            <?php endforeach; else: ?> <h2>Sem cadastros</h2><?php ; endif; ?>
 	            </td>
