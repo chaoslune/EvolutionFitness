@@ -42,9 +42,9 @@
           <ul class="navbar-nav">
             <li class="nav-item">
               <div>
-                <a class="nav-link js-scroll-trigger" href="">Página Inicial</a>
+                <!-- <a class="nav-link js-scroll-trigger" href="">Página Inicial</a> -->
                 <a class="nav-link js-scroll-trigger" href="<?php echo base_url('listStudents'); ?>">Alunos</a>
-                <a class="nav-link js-scroll-trigger" href="">Relatórios</a>
+                <!-- <a class="nav-link js-scroll-trigger" href="">Relatórios</a> -->
               </div>
             </li>
           </ul>
